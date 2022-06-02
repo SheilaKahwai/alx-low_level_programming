@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* function main prints the statement*/
+/**
+ *main - prints the statement
+ *Return: 0 if successful
+ */
 
 int main(void)
 {
