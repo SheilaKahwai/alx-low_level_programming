@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/**
+ * main - prints digits in hexadecimal
+ *
+ */
+
+int main(void)
+{
+int hex = 0;
+char hex_a = 'a';
+while(hex < 10)
+{
+putchar(hex + '0');
+hex++;
+}
+while(hex_a <= 'f')
+{
+putchar(hex_a);
+hex_a++;
+}
+putchar('\n');
+return (0);
+}
