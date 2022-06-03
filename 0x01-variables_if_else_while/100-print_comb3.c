@@ -17,7 +17,7 @@ if (x != y && x < y)
 {
 putchar(x + '0');
 putchar(y + '0');
-if (x != 8 || y !=9)
+if (x != 8 || y != 9)
 {
 putchar(',');
 putchar(' ');
