@@ -21,7 +21,7 @@ if (x < y && y < z && x < z)
 putchar(x + '0');
 putchar(y + '0');
 putchar(z + '0');
-if (x != 7 || y != 8 || z != 9)
+if (x != 7 || y != 8)
 {
 putchar(',');
 putchar(' ');
@@ -31,7 +31,7 @@ z++;
 }
 y++;
 }
-z++;
+x++;
 }
 putchar('\n');
 return (0);
