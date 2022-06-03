@@ -9,12 +9,12 @@ int main(void)
 {
 char lower_alph = 'a';
 char upper_alph = 'A';
-while (lower_alph <= 'a')
+while (lower_alph <= 'z')
 {
 putchar(lower_alph);
 lower_alph++;
 }
-while (upper_alph <= 'A')
+while (upper_alph <= 'Z')
 {
 putchar(upper_alph);
 upper_alph++;
