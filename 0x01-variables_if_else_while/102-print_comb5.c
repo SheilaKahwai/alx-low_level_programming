@@ -7,38 +7,28 @@
 
 int main(void)
 {
-int w = 0;
-while (w < 10)
-{
 int x = 0;
-while (x < 10)
+while (x < 100)
 {
 int y = 0;
-while (y < 10)
+while (y < 100)
 {
-int z = 0;
-while (z < 10)
+if (x < y)
 {
-if (w <= y && x < z)
-{
-putchar(w + '0');
-putchar(x + '0');
+putchar((x / 10) + 48);
+putchar((x % 10) + 48);
 putchar(' ');
-putchar(y + '0');
-putchar(z + '0');
-if (w != 9 || x != 8 || y != 9 || z != 9)
+putchar((y / 10) + 48);
+putchar((y % 10) + 48);
+if (x != 98 || y != 99)
 {
 putchar(',');
 putchar(' ');
 }
 }
-z++;
-}
 y++;
 }
 x++;
-}
-w++;
 }
 putchar('\n');
 return (0);
