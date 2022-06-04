@@ -16,10 +16,10 @@ while (x < 10)
 int y = 0;
 while (y < 10)
 {
-int z = 1;
+int z = 0;
 while (z < 10)
 {
-if (w <= y && x < z)
+if (w <= y && x <= z)
 {
 putchar(w + '0');
 putchar(x + '0');
