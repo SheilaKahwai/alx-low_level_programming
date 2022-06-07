@@ -7,10 +7,10 @@
 
 void print_alphabet_x10(void)
 {
-  int x = 0, char alph;
+  int x = 0;
   while (x < 10)
     {
-      alph = 'a';
+      char alph = 'a';
       while (alph <= 'z')
 	{
 	  _putchar(alph);
