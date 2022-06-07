@@ -1,0 +1,15 @@
+#include "main.h"
+
+/** 
+ * add - prints the sum of two numbers
+ * @x: number to check
+ * @y: number to check
+ * Return: sum of two numbers
+ */
+
+int add(int x, int y)
+{
+int sum;
+sum = x + y;
+return (sum);
+}
