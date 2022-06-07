@@ -15,7 +15,7 @@ while (y < 10)
 {
 prod = x * y;
 if (y == 0)
-_putchar(x + '0');
+_putchar(prod + '0');
 if (prod < 10 && y != 0)
 {
 _putchar(',');
