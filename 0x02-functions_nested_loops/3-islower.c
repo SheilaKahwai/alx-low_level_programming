@@ -1,8 +1,7 @@
 int _islower(int c)
 {
-char alph;
 int res;
-if (alph >= 'a' && alph <= 'z')
+if (c >= 97 && c <= 122)
 res = 1;
 else
 res = 0;
