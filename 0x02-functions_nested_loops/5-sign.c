@@ -12,23 +12,18 @@ int res;
 if (n > 0)
 {
 _putchar('+');
-_putchar(',');
 res = 1;
-_putchar('\n');
 }
 else if (n == 0)
 {
-_putchar(' ');
-_putchar(',');
+_putchar('0');
 res = 0;
-_putchar('\n');
 }
 else
 {
 _putchar('-');
-_putchar(',');
 res = -1;
-_putchar('\n');
 }
+_putchar('\n'); 
 return (res);
 }
