@@ -14,5 +14,6 @@ x = -x;
 res = x % 10;
 if (res < 0)
 res = -res;
+_putchar(res + '0');
 return (res);
 }
