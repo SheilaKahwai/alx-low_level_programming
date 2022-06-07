@@ -45,6 +45,6 @@ _putchar((prod % 10) + '0');
 y++;
 }
 x++;
-}
 _putchar('\n');
+}
 }
