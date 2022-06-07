@@ -8,10 +8,24 @@ int print_sign(int n)
 {
 int res;
 if (n > 0)
+{
+_putchar('+');
+_putchar(',');
 res = 1;
+_putchar('\n');
+}
 else if (n == 0)
+{
+_putchar(' ');
+_putchar(',');
 res = 0;
+_putchar('\n');
+}
 else
+{
+_putchar('-');
+_putchar(',');
 res = -1;
+_putchar('\n');
 return (res);
 }
