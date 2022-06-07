@@ -11,10 +11,12 @@ void print_times_table(int n)
 {
 int prod;
 int x = 0;
-while (x <= n && 0 < n < 15)
+while (x <= n)
 {
 int y = 0;
-while (y <= n && 0 < n < 15)
+while (y <= n)
+{
+if (n >= 0 && n <= 15)
 {
 prod = x * y;
 if (y == 0)
@@ -42,6 +44,7 @@ _putchar(' ');
 _putchar((prod / 100) + '0');
 _putchar(((prod / 10) % 10) + '0');
 _putchar((prod % 10) + '0');
+}
 }
 y++;
 }
