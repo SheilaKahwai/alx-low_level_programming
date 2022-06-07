@@ -12,10 +12,10 @@ if (n <= 98)
 {
 while (n <= 98)
 {
-  if (n != 98)  
+if (n != 98)
 printf("%d, ", n);
-  else
-    printf("%d\n", n);
+else
+printf("%d\n", n);
 n++;
 }
 }
