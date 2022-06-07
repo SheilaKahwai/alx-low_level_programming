@@ -32,6 +32,7 @@ _putchar((prod % 10) + '0');
 }
 y++;
 }
+_putchar('\n');
 x++;
 }
 }
