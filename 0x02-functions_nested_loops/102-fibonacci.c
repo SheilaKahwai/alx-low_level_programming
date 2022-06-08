@@ -13,7 +13,7 @@ long int y = 2;
 long int sum = 0;
 printf("%ld, ", x);
 printf("%ld, ", y);
-for (c = 1; c <= 50; c++)
+for (c = 3; c <= 50; c++)
 {
 sum = x + y;
 if (c != 50)
