@@ -5,21 +5,21 @@
  * Return: 0 on successful exit
  */
 
-int main(void)
+void print_triangle(int size)
 {
-int x;
+int size;
 int y;
 if (n <= 0)
 _putchar('\n');
 else
 {
-for (x = 1; x <= n; x++)
+for (size = 1; size <= n; size++)
 {
 for(y = n; y > 0; y--)
 {
-if (x >= y)
+if (size >= y)
 _putchar('#');
-else if (y > x)
+else if (y > size)
 _putchar(' ');
 }
 _putchar('\n');
