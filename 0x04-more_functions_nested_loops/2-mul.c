@@ -9,7 +9,7 @@
 
 int _mul(int a, int b)
 {
-long int prod;
+int prod;
 prod = a * b;
 return (prod);
 }
