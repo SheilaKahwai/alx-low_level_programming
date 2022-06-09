@@ -15,7 +15,7 @@ else
 {
 for (x = 1; x <= size; x++)
 {
-for(y = size; y > 0; y--)
+for (y = size; y > 0; y--)
 {
 if (x >= y)
 _putchar('#');
