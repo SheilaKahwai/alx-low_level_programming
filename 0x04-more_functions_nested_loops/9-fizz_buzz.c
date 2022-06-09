@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - fizz-buzz program
+ * Return: 0 on successful exit
+ */
+
 int main(void)
 {
 int x;
