@@ -9,6 +9,7 @@ void rev_string(char *s)
 {
 	char tempo;
 	int x, len, len1;
+
 	len = 0;
 	len1 = 0;
 
