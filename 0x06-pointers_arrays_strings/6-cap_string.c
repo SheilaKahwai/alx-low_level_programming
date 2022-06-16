@@ -4,23 +4,29 @@
  * Return: pointer to resulting string
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int i, j;
 
-	char spec[] = {' ', ',', ';', '.', '!', '?', '"',
-		'(', ')', '{', '}', '\n', '\t'};
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; spec[j] != '\0'; j++)
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+	
+		for (j = 0; j < 13; j++)
 		{
-			if (str[i] == spec[j])
+			if (s[i] == spe[j])
 			{
-				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
-					str[i + 1] -= 32;
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] -= 32;
+				}
 			}
 		}
 	}
-	return (str);
+
+	return (s);
 }
