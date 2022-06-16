@@ -1,6 +1,5 @@
 /**
- * string_toupper - converts a lowercase string 
- * to uppercase
+ * string_toupper - converts a lowercase string to uppercase
  * @str: string to convert
  * Return: resulting string
  */
