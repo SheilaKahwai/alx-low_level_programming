@@ -8,12 +8,12 @@ char *cap_string(char *str)
 {
 	int i, j;
 
-	char spec[13] = {' ', ',', ';', '.', '!', '?', '"',
+	char spec[] = {' ', ',', ';', '.', '!', '?', '"',
 		'(', ')', '{', '}', '\n', '\t'};
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j < 13; j++)
+		for (j = 0; spec[j] != '\0'; j++)
 		{
 			if (str[i] == spec[j])
 			{
