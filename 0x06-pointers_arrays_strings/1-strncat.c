@@ -7,22 +7,23 @@
  * Return: pointer to resulting dest string
  */
 
-
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int len1 = 0;
+	int i = 0;
+	int j = 0;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	while (dest[i] != '\0')
 	{
-		len1++;
+		i++;
 	}
 
-	for (i = 0; i < n; i++)
+	while (src[j] != '\0' && j < n)
 	{
-		dest[len1 + i] = src[i];
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	dest[len1 + i] = '\0';
+	dest[i] = '\0';
 
 	return (dest);
 }
