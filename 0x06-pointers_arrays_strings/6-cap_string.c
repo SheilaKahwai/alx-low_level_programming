@@ -1,6 +1,6 @@
 /**
  * cap_string - capitalizes a string
- * @str: strin to capitalize
+ * @str: string to capitalize
  * Return: pointer to resulting string
  */
 
