@@ -12,8 +12,7 @@ int main(void)
 int i, x;
 char pass[100];
 
-char *list[] = "abcdefghijklmnopqrstuvwxyzABCDEFG" +
-	"HIJKLMNOPQRSTUVWXYZ0123456789~`!@#$^&*()_-+={}[]|<,>.?/";
+char list[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~`!@#$^&*()_-+={}[]|<,>.?/";
 
 srand(time(NULL));
 for (i = 0; i < 100; i++)
