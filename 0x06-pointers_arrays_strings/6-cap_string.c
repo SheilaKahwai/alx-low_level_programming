@@ -1,6 +1,6 @@
 /**
  * cap_string - capitalizes a string
- * @str: string to capitalize
+ * @s: string to capitalize
  * Return: pointer to resulting string
  */
 
@@ -15,7 +15,6 @@ char *cap_string(char *s)
 	{
 		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
 			s[i] -= 32;
-	
 		for (j = 0; j < 13; j++)
 		{
 			if (s[i] == spe[j])
