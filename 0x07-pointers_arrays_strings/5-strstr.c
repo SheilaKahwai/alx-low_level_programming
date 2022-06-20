@@ -1,3 +1,5 @@
+#include <string.h>
+
 /**
  * _strstr - locates a substring
  * @haystack: strings to scan
@@ -6,10 +8,10 @@
  * or NULL if the substring is not found
  */
 
-
 char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
+
 	int len1 = 0;
 	int len2 = 0;
 
@@ -21,7 +23,6 @@ char *_strstr(char *haystack, char *needle)
 	{
 		len2++;
 	}
-
 	for (i = 0; i < len1; i++)
 	{
 		for (j = 0; j < len2; j++)
@@ -31,7 +32,6 @@ char *_strstr(char *haystack, char *needle)
 			if (j == len2)
 			{
 				return (haystack);
-				break;
 			}
 		}
 		if (i == len1)
@@ -40,9 +40,3 @@ char *_strstr(char *haystack, char *needle)
 
 	return (NULL);
 }
-
-
-
-
-
-		 
