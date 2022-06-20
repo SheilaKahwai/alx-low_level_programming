@@ -29,14 +29,10 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (haystack[i + j] != needle[j])
 				break;
-			if (j == len2)
-			{
-				return (haystack);
-			}
 		}
-		if (i == len1)
-			return (NULL);
-	}
+		if (j == len2)
+			return (&haystack[i]);
+		}
 
 	return (NULL);
 }
