@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			product = atoi(argv[i]) * atoi(argv[i + 1]);
-			printf("%d\n", product);
 		}
+		printf("%d\n", product);
 	}
 
 	return (0);
