@@ -11,21 +11,22 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	unsigned int i;
+	char *s;
+
+	unsigned int j = 0;
 	unsigned int len1 = 0;
 	unsigned int len2 = 0;
-	unsigned int i, j;
-	char *s;
-	j = 0;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s1[i] != '\0')
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		len1++;
 	}
-	for (i =0; s2[i] != '\0')
+	for (i = 0; s2[i] != '\0'; i++)
 	{
 		len2++;
 	}
