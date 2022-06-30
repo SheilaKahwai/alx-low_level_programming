@@ -3,7 +3,8 @@
 
 /**
  * malloc_checked - allocates memory using malloc
- * @b: no. of variables that require memory
+ * @b: no. of bytes to allocate
+ * Return: a pointer to the newly allocated memory
  */
 
 void *malloc_checked(unsigned int b)
