@@ -1,3 +1,5 @@
+#include<stdlib.h>
+
 /**
  * malloc_checked - allocates memory using malloc
  * @b: no. of variables that require memory
