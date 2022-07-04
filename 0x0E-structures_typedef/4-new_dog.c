@@ -53,7 +53,7 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	unsigned int len1, len2;
-	char *n_dog;
+	dog_t *n_dog;
 
 	len1 = _strlen(name);
 	len2 = _strlen(owner);
