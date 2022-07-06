@@ -7,7 +7,7 @@
  * Return: 0 on successful exit
  */
 
-int main(int ac, char *av)
+int main(int ac, char *av[])
 {
 	int num1, num2;
 	int res = 0;
