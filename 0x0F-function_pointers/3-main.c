@@ -10,17 +10,21 @@
 int main(int ac, char *av[])
 {
 	int num1, num2;
-	int res = 0;
-	int (*ptr)(int, int) = get_op_func(av[2]);
+	int (*ptr)(int, int);
 
-	num1 = atoi(av[1]);
-	num2 = atoi(av[3]);
+	int res = 0;
 
 	if (ac != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+
+	num1 = atoi(av[1]);
+	num2 = atoi(av[3]);
+
+	ptr = get_op_func(av[2]);
+
 	if (ptr == NULL)
 	{
 		printf("Error\n");
