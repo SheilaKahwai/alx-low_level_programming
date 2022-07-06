@@ -1,3 +1,5 @@
+#include "function_pointers.h"
+
 /**
  * int_index - calls functions to compare array elements
  * @size: size of array
