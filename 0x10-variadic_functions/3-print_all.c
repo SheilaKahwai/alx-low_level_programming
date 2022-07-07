@@ -12,6 +12,7 @@ void print_all(const char * const format, ...)
 
 	int i = 0;
 	char *sep = "";
+
 	va_start(args, format);
 
 	if (format != NULL)
@@ -42,7 +43,7 @@ void print_all(const char * const format, ...)
 			sep = ", ";
 			i++;
 		}
-		printf("\n");
 	}
+	printf("\n");
 	va_end(args);
 }
