@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include "lists.h"
 
 /**
@@ -9,7 +10,7 @@
 size_t list_len(const list_t *h)
 {
 	size_t len;
-	list_t *curr;
+	const list_t *curr;
 
 	len = 0;
 
