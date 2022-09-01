@@ -20,7 +20,7 @@ new = malloc(sizeof(dlistint_t));
 if (!new)
 return (NULL);
 new->n = n;
-if (!(*head))
+if (idx == 0)
 return (add_dnodeint(h, n));
 while (count != (idx - 1) && curr)
 {
