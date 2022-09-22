@@ -18,7 +18,7 @@ hash_node_t *node;
 if (strlen(key) == 0 || !ht || !value || !key)
 return (0);
 
-idx = key_index(key, ht->size);
+idx = key_index((unsigned char *)key, ht->size);
 check = check_key(ht->array[idx], key);
 if (check == 1)
 {
@@ -67,7 +67,7 @@ break;
 curr = curr->next;
 }
 free (curr->value);
-curr->value = value;
+curr->value = strdup(value);
 }
 
 /**
