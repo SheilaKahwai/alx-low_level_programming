@@ -23,7 +23,7 @@ while (curr)
 {
 if (strcmp(curr->key, key) == 0)
 return (curr->value);
-curr = cuur->next;
+curr = curr->next;
 }
 return (NULL);
 }
