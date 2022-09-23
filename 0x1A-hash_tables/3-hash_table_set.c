@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 unsigned long int idx;
 int check;
 hash_node_t *node;
-  
+
 if (strlen(key) == 0 || !ht || !value || !key)
 return (0);
 
@@ -66,7 +66,7 @@ if (strcmp(curr->key, key) == 0)
 break;
 curr = curr->next;
 }
-free (curr->value);
+free(curr->value);
 curr->value = strdup(value);
 }
 
