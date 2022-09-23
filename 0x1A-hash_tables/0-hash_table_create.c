@@ -16,7 +16,7 @@ table = malloc(sizeof(hash_table_t));
 if (table == NULL)
 return (NULL);
 table->size = size;
-table->array = malloc(sizeof(size));
+table->array = malloc(sizeof(void *) * size);
 if (table->array == NULL)
 return (NULL);
 
