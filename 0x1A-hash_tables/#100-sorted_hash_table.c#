@@ -1,0 +1,116 @@
+#include "hash_tables.h"
+
+/**
+ * shash_table_create - creates a hash table
+ * @size: size of hash table array
+ * Return: ponter to hash table
+ */
+
+shash_table_t *shash_table_create(unsigned long int size)
+{
+shash_table_t *hash_table;
+  
+if (size == 0)
+return (NULL);
+
+hash_table = malloc(sizeof(shash_table_t));
+if (!hash_table)
+return (NULL);
+hash_table->size = size;
+hash_table->array = malloc(sizeof(void *) * size);
+if (hash_table->array == NULL)
+return (NULL);
+return (hash_table);
+}
+
+/**
+ * shash_table_set - adds an element to the hash table
+ * @ht: pointer to hash table
+ * @key: the key to be added or updated
+ * @value: value to be added or updated
+ * Return: 1 if successful, 0 otherwise
+ */
+
+int shash_table_set(shash_table_t *ht, const char *key, const char *value)
+{
+unsigned long int idx;
+int check;
+shash_node_t *node;
+
+if (strlen(key == 0) || !key || !ht || !value)
+return (0);
+
+idx = key_index((unsigned char *)key, ht->size);
+check = check_key_s(ht->array[idx], key);
+if (check == 1)
+{
+update_value_s(&ht->array[idx], key, value);
+return (1);
+}
+node = create_node(&ht->array[idx], key, value);
+if (node == NULL)
+return (NULL);
+insert_node(node, ht);
+return (1);
+}
+
+/**
+ * check_key_s - checks if a key already exists in the table
+ * @ht: pointer to the hash node list
+ * @key: the key to search for
+ * Return: 1 if key exists, 0 otherwise
+ */
+int check_key_s(shash_node_t *ht, const char *key)
+{
+}
+
+void update_value_s(shash_node_t **ht, const char *key, const char *value)
+{
+}
+
+/**
+ * create_node - creates a node to add to the table
+ * @ht: pointer to hash table array
+ * @key: key to add to node
+ * @value: value to add to node
+ * Return: new node or NULL if unsuccessful
+ */
+
+shash_node_t *create_node(shash_node_t **ht, const char *key, const char *value)
+{
+shash_node_t *new_node;
+
+new_node = malloc(sizeof(shash_node_t));
+if (new_node == NULL)
+return (NULL);
+new_node->key = strdup(key);
+new_node->value = strdup(value);
+
+ return (new_node);
+}
+
+/**
+ * insert_node - inserts a node in a sorted linked list
+ * @node: node to insert
+ * @ht: pointer to hash table
+ */
+
+void insert_node(shash_node_t *node, shash_table_t *ht)
+{
+  shash_node_t *tmp;
+
+  tmp = ht->shead;
+
+  if (!tmp)
+    {
+      ht->shead = node;
+      ht->stail = node;
+    }
+  else
+    {
+      
+      
+      
+  
+  
+
