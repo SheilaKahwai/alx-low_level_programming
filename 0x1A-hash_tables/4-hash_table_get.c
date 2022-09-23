@@ -15,7 +15,7 @@ hash_node_t *curr;
 
 if (!ht || !key)
 return (NULL);
-  
+
 idx = key_index((unsigned char *)key, ht->size);
 curr = ht->array[idx];
 
